@@ -1,0 +1,42 @@
+:root {
+    --color: darkblue;
+    --border : 1px solid var(--color);
+}
+.center{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.k-txt { color: var(--color) }
+.k-bg  { background-color: var(--color); }
+.k-bord { border: solid 1px var(--color); }
+.k-cus { cursor: pointer; }
+.k-sf { font-size: 13px; }
+.h-25px{ height: 25px; } .h-50px{ height: 50px; } 
+.h-75px{ height: 75px; } .h-100px{ height: 100px; }
+.k-py{ padding: 50% 0}
+.k-posr{  position: relative;}
+.k-posa{  position: absolute;}
+.k-posaR{  position: absolute; right: 2%;}
+.k-posaL{  position: absolute; left: 2%;}
+a:hover{text-decoration: none; color: inherit;}
+.w-20{width: 20%;} .w-40{width: 40%;} .w-80{width: 80%;} 
+.k-row{display: flex; flex-wrap: wrap; flex-flow: auto;}
+.k-btn {
+    background-color: var(--color);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.k-btn:hover{background-color: white; border:var(--border) ; color:var(--color)}
+.k-box{
+    background-color: var(--color);
+    color: white;
+    padding: 2px;
+}
+
+@media screen and (max-width:576px){
+    .d-sm{
+        display: none;
+    }
+}

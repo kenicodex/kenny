@@ -1,0 +1,85 @@
+.brand {
+    font-size: 20px;
+    padding: 10px 0 0 6%;
+    font-weight: 600;
+    font-stretch: expanded;
+}
+
+.links {
+    display: inline;
+    right: 2%;
+    padding: 10px 0 0 0;
+}
+.links a {
+    color: white;
+    padding-left: 20px;
+}
+.bookme {
+    width: 150px;
+    margin-top:30px;
+}
+header {
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    color: black;
+    background-image: url('../images/custom-Banner-Design.png');
+    background-size: 100% 100%;
+}
+
+header>div {
+    font-size: 20px;
+}
+.main {
+    height: auto;
+    margin: auto;
+    width: 90%;
+}
+.project {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    color: black;
+}
+footer{
+    height: 20vh;
+    color: wheat;
+    background-color: #29cfcb;
+}
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contain {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 25%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+@media screen and (max-width:576px) {
+    header {
+        height: auto;
+        position: relative;
+        background-color: white;
+        color: black;
+        background-size: auto;
+    }
+    header>div {
+        padding: 2%;
+    }
+    .main {
+        margin: auto;
+        width: 100%;
+        padding: 10px 5% 0px;
+    }
+    
+    .links a {
+        padding-left: 5px;
+    }
+}

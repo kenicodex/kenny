@@ -1,0 +1,24 @@
+.addtolist{
+    width: 70%;
+    height: 30px;
+    margin: .2em;
+    border-radius: 5px;
+    border: darkblue 1px solid;
+}
+.addbtn{
+    width: 28%;
+    height: 30px;
+    margin: .2em;
+    border-radius: 5px;
+    border: darkblue 1px solid;
+    background-color: #fff;
+    color: darkblue;
+}
+.task{
+    border-bottom: rgb(80, 74, 74) solid 1px;
+    margin: .2em 0;
+}
+.item{
+    border: none;
+}
+.item:focus{border: none;}
