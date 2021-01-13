@@ -6,7 +6,7 @@ import  "./css/bootstrap.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path='/' component={Home} /> 
       </Switch>

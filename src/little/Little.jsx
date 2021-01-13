@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './little.css'
 
 function Little(props) {
     const [mode, setMode] = useState([
@@ -30,7 +31,11 @@ function Little(props) {
         }
     }
     const start = ()=>{
-        setShow(true)
+        if (show) {
+            setShow(!show)
+        } else { 
+            setShow(!show)
+        }
     }
     const change = (box) => {
         // true --> x -__-  false --> o
@@ -51,18 +56,19 @@ function Little(props) {
         // win()
     }
     return (
-        <div className='h-100'  style={{width:'200px'}}>
-            {just ? 'Player 1  X' : 'Player 2  O'}
-            <div className="k-row" style={{flexWrap:'wrap', display :show ? 'flex' : 'none'}}>
+        <div className='h-auto w-100 p-2 bg-light text-dark'  style={{width:'200px'}}>
+            Play Tic Tac Toe
+            <div className="k-row" style={{flexWrap:'wrap', display :show ? 'flex' : 'none',height:"200px", width:'200px'}}>
                 {mode.map(({value, bool},index) => {
-                  return(  <div className=" border bg-primary" onClick={() => { change(index) }}
+                  return( <div key={index} className="boxes text-dark text-center" onClick={() => { change(index) }}
                                 style={{flex:"33.33%", height:'40px',width:'40px'}}>
                         {value}
                     </div>)
-                })}
-            </div>
-            <button className='btn border m-2'style={{display :show ? 'none' : 'block'}} 
-            onClick={()=>{start()}}>Start game</button>
+                })} <br/>
+                {just ? 'Player 1  X' : 'Player 2  O'}
+            </div> <br/>
+            <button className='btn border text-dark'
+            onClick={()=>{start()}}>{show ? 'End' : 'Start'} game</button>
         </div>
     );
 }
