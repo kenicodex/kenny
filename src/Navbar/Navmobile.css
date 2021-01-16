@@ -1,0 +1,66 @@
+
+@media (max-width:992px){
+    .brand {
+        padding-left: 5%;
+        width: 100%;
+        background-image: inherit;
+        height: 5vh;
+        position: absolute;
+        font-size: 25px
+    }
+    .links{
+        position: fixed;
+        width: 42%;
+        left: 0;
+        height: 100vh;
+        padding-top:10px;
+        background-color:#343a40 ;
+        color: white;
+        border: none;
+        display: none;
+        z-index: 200;
+        animation: link 1s linear 1s 0 alternate;
+    }
+    .links a {
+        font-size: 15px;
+        padding:25px 0 0 10px;
+        height: 20px;
+        width: 100%;
+    }
+    nav{ 
+        width: 100%;
+        border-bottom: none;
+        background-color: inherit;
+        position: relative;
+    } 
+    .mobileBrand{
+        display: block;
+        padding: 15px 0px 20px 25px;
+        font: 15px open;
+    }
+    .bar{
+        display: inline;
+        position: absolute;
+        right: 5%;
+        top:5px;
+    }
+    .hide{display: inline;}
+    .rel{
+        display: block;
+        border-top: white 1px solid;
+        border-bottom: white 1px solid;
+        padding: 10px 0 10px 10px;
+    }
+    .rel:hover{
+        background-color: darkslategray;
+    }
+    .fa{padding: 0 5px;}
+    @keyframes link {
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow ;
+        }
+    }
+}

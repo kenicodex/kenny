@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { projects } from './Home';
 import './Home.css'
+import './mobile.css'
 import img from '../images/lap.jpg'
 import Navbar from '../Navbar/Navbar';
 import Little from '../little/Little';
@@ -13,28 +14,23 @@ function Home(props) {
             <div className='design'></div>
             <header className="w-100 ">
                 <Navbar />
-                <div className="k-row w-100 mx-0 block">
-                    <div className='left col-lg-6 text-center' style={{}}>
-                        <b className='h2'>Web Developer </b>
+                <div className="blockH">
+                    <div className='text-center'>
+                        <div className='web'>Web Developer</div>
                         <h5>React and Nodejs Skilled</h5>
-                        <div className='btns center'>
-                            <a href="https://wa.link/rhfeu4">
-                                <button className="btn rounded-pill border mx-2 text-white"
-                                    style={{ backgroundImage: "inherit" }}>Book me</button></a>
-                            <a href="https://wa.link/rhfeu4">
-                                <button className="btn rounded-pill border mx-2 text-white"
-                                    style={{ backgroundImage: "inherit" }}>Tutorial</button></a>
-                        </div>
                     </div>
-                    <div className='right center col-lg-6 p-1' style={{ height: 'auto', }}>
-                        <Little len={all} />
+                    <div className='pic'>
+
                     </div>
                 </div>
-                <a href="#projects" className='d-sm'>
-                    <button className='btn position-absolute' style={{ left: "49%", bottom: '0' }} >
-                        <i className='fa fa-arrow-down' style={{ color: 'wheat' }}></i>
-                    </button>
-                </a>
+                <div className='btns center'>
+                    <a href="https://wa.link/rhfeu4">
+                        <button className="btn rounded-pill border mx-2 text-white"
+                            style={{ backgroundImage: "inherit" }}>Book me</button></a>
+                    <a href="https://wa.link/rhfeu4">
+                        <button className="btn rounded-pill border mx-2 text-white"
+                            style={{ backgroundImage: "inherit" }}>Tutorial</button></a>
+                </div>
             </header>
             <div className="body bg-light" style={{ zIndex: "100" }} id='projects'>
                 <div className='main pb-3'>
@@ -44,7 +40,7 @@ function Home(props) {
                             return (
                                 <Link to={link} className="col-lg-4 col-sm-6" key={index} color="black">
                                     <div className="text-right border rounded my-1 p-3 k-cus pro bg-white h-50px mr-1 position-relative"
-                                        style={{ fontSize: "15px", height: "200px", backgroundImage:`url(${img})` }}>
+                                        style={{ fontSize: "15px", height: "200px",  }}>
                                         <div className='project'>Project {index} : {name} <br />--{status}</div>
                                     </div>
                                 </Link>)
@@ -52,11 +48,8 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className='position-relative bg-light'> 
-                <div className='svg '></div>
-            </div>
             <footer className='w-100 center'>
-                    © copyright 2021
+                © copyright 2021
             </footer>
         </section>
     );

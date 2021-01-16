@@ -1,0 +1,43 @@
+
+@media screen and (max-width:576px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+    .web{
+        font: 30px open;
+        padding-top: 35px;
+    }
+    .design{
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute
+    }
+    .blockH{
+        grid-template-columns:60% 30%;
+        padding: 0 1%;
+    }   
+    .btns > a > button{
+        width: 100px;
+    }
+    .main {
+        margin: auto;
+        width: 100%;
+        padding: 10px 5% 0px;
+        background-color: rgb(238, 225, 225);
+    }
+    .btns{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .pic{
+        border-radius: 100%;
+        height: 100px; width: 100px;
+        background-image: url('../images/pic.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        left: 25%;
+        top: 20px;
+    }
+}
