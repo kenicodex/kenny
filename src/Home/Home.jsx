@@ -32,16 +32,17 @@ function Home(props) {
                             style={{ backgroundImage: "inherit" }}>Tutorial</button></a>
                 </div>
             </header>
-            <div className="body bg-light" style={{ zIndex: "100" }} id='projects'>
+            <div className="body bg-dark" style={{ zIndex: "100" }} id='projects'>
                 <div className='main pb-3'>
-                    <h3 className="py-1 position-relative text-white" style={{ zIndex: '100' }}>  Here are some of my works</h3>
+                    <h3 className="py-2 position-relative text-white"
+                     style={{ zIndex: '100' }}>  Here are some of my works</h3>
                     <div style={{ display: "flex", flexWrap: "wrap" }}>
                         {projects.map(({ name, description, last_updated, status, link }, index) => {
                             return (
                                 <Link to={link} className="col-lg-4 col-sm-6" key={index} color="black">
                                     <div className="text-right border rounded my-1 p-3 k-cus pro bg-white h-50px mr-1 position-relative"
                                         style={{ fontSize: "15px", height: "200px",  }}>
-                                        <div className='project'>Project {index} : {name} <br />--{status}</div>
+                                        <div className='project text-dark'>Project {index} : {name} <br />--{status}</div>
                                     </div>
                                 </Link>)
                         })}

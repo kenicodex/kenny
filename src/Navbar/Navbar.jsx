@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Navbar.css'
 import './Navmobile.css'
+import logo from '../images/logo.png'
 function Navbar(props) {
     const hide = useRef(null)
     const brand = useRef(null)
@@ -15,17 +16,17 @@ function Navbar(props) {
     })
     return (
         <nav>
-            <div className="brand" ref={brand}>Kenny code
+            <div className="brand" ref={brand}><img src={logo} alt="" width="50px" height="50px"/>
                 <div className='bar' onClick={() => { show() }}> <i className='fa fa-bars'></i>
                 </div>
             </div>
             <div className="links" ref={hide} >
                 <div className='mobileBrand'>
-                    <h3>kC</h3>
+                    {/* <h3>kC</h3> */}<img src={logo} alt="" width="50px" height="50px"/> <br/>
                     <div className="hide"> Developer</div>
                 </div>
                <div className='rel'>
-                   <a href="/"> <i className="fa fa-github"></i>
+                   <a href="https://github.com/kenicodex/"> <i className="fa fa-github"></i>
                      <span className='hide'>Github</span></a>
                 </div>
                <div className='rel'>
@@ -48,10 +49,10 @@ function Navbar(props) {
                    <a href="/"> 
                      <span className='hide'>About kenny</span></a>
                 </div>
-                <div className='navfoot hide position-absolute w-100 text-center' style={{bottom:"2%"}}>
-                    ©copyrights kennycode 
+                <small className='navfoot hide position-absolute w-100 text-center' style={{bottom:"2%"}}>
+                    © kennycode 2021
 
-                </div>
+                </small>
             </div>
         </nav>
     );
